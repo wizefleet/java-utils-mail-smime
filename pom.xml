@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+<!--	<parent>-->
+<!--		<groupId>com.github.bbottema</groupId>-->
+<!--		<artifactId>standard-project-parent</artifactId>-->
+<!--		<version>1.0.24</version>-->
+<!--	</parent>-->
+
+	<groupId>org.simplejavamail</groupId>
+	<artifactId>utils-mail-smime</artifactId>
+	<packaging>jar</packaging>
+	<name>utils-mail-smime</name>
+	<version>2.0.2-SNAPSHOT</version>
+<!--	<description>A S/MIME library for JavaMail</description>-->
+<!--	<url>http:///github.com/bbottema/java-utils-mail-smime</url>-->
+<!--	<inceptionYear>2021</inceptionYear>-->
+
+	<properties>
+<!--		<automaticModuleName>com.github.bbottema.java-utils-mail-smime</automaticModuleName>-->
+		<!-- license plugin, see possible types here: -->
+		<!-- https://github.com/mathieucarbou/license-maven-plugin/tree/master/license-maven-plugin/src/main/resources/com/mycila/maven/plugin/license/templates -->
+<!--		<license.type>com/mycila/maven/plugin/license/templates/APACHE-2.txt</license.type>-->
+<!--		<license.owner.name>Benny Bottema</license.owner.name>-->
+<!--		<license.owner.email>benny@bennybottema.com</license.owner.email>-->
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
+
+<!--	<scm>-->
+<!--		<connection>scm:git:git://github.com/bbottema/java-utils-mail-smime.git</connection>-->
+<!--		<developerConnection>scm:git:git@github.com:bbottema/java-utils-mail-smime.git</developerConnection>-->
+<!--		<url>https://github.com/bbottema/java-utils-mail-smime</url>-->
+<!--	</scm>-->
+
+<!--	<developers>-->
+<!--		<developer>-->
+<!--			<id>benny</id>-->
+<!--			<name>Benny Bottema</name>-->
+<!--			<email>benny@bennybottema.com</email>-->
+<!--			<url>http://www.bennybottema.com</url>-->
+<!--			<roles>-->
+<!--				<role>developer</role>-->
+<!--				<role>packager</role>-->
+<!--			</roles>-->
+<!--		</developer>-->
+<!--	</developers>-->
+
+	<contributors>
+		<contributor>
+			<name>Torsten Krause</name>
+			<roles>
+				<role>original developer (GitHub, 2015)</role>
+			</roles>
+		</contributor>
+		<contributor>
+			<name>Lijun Liao</name>
+			<roles>
+				<role>original developer (SourceForge, 2003)</role>
+			</roles>
+		</contributor>
+		<contributor>
+			<name>Allen Petersen</name>
+			<roles>
+				<role>original developer (SourceForge, 2003)</role>
+			</roles>
+		</contributor>
+	</contributors>
+
+<!--	<issueManagement>-->
+<!--		<system>GitHub Issues</system>-->
+<!--		<url>https://github.com/bbottema/java-utils-mail-smime/issues</url>-->
+<!--	</issueManagement>-->
+
+	<dependencies>
+		<dependency><!-- Gives us @NotNull and @Nullable -->
+			<groupId>org.jetbrains</groupId>
+			<artifactId>annotations</artifactId>
+			<version>16.0.2</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcjmail-jdk15to18</artifactId>
+			<version>1.70</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>jakarta.mail</artifactId>
+			<version>2.0.1</version>
+		</dependency>
+	</dependencies>
+</project>
